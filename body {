@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: #222;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+canvas {
+    background: black;
+    border: 2px solid #555;
+    width: 90%;
+    max-width: 900px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 15px 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#evento {
+    padding: 15px;
+    background: #222;
+    margin-top: 10px;
+}
+

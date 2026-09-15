@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consola Sismo-Volcánica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Consola de Vigilancia Sismo-Volcánica</h1>
+
+    <div class="panel">
+        <p>Estado: <span id="estado">MONITOREANDO</span></p>
+        <p>Estación: <span id="station">1</span></p>
+        <p>STA/LTA: <span id="ratio">0.00</span></p>
+        <p>Amplitud: <span id="amplitud">0.00</span></p>
+        <p>Muestras: <span id="muestras">0</span></p>
+    </div>
+
+    <canvas id="grafico" width="900" height="300"></canvas>
+
+    <div class="botones">
+        <button onclick="iniciar()">Iniciar</button>
+        <button onclick="simularSismo()">Simular sismo</button>
+        <button onclick="detener()">Detener</button>
+    </div>
+
+    <div id="evento">
+        Sin eventos detectados
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html> 
+
