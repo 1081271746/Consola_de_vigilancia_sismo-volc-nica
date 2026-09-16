@@ -5,7 +5,7 @@ Este proyecto es una página web que simula una consola para monitorear activida
 
 Se utilizan Web Workers para repartir el procesamiento y evitar que la página se quede bloqueada.
 
-¿Cómo funciona?
+que hace:
 index.html: contiene la interfaz y los botones.
 style.css: contiene los estilos de la página.
 app.js: controla la interfaz, los Workers, la gráfica y los eventos.
