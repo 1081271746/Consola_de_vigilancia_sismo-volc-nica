@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #101010;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #1c1c1c;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+    color: #bbbbbb;
+}
+
+.panel {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    padding: 15px;
+}
+
+.panel div {
+    background: #202020;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.panel span {
+    display: block;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.panel strong {
+    display: block;
+    margin-top: 7px;
+    font-size: 18px;
+}
+
+.controles {
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    padding: 11px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #dddddd;
+}
+
+button:hover {
+    background: #ffffff;
+}
+
+.grafica {
+    padding: 10px 20px;
+}
+
+.grafica h2 {
+    font-size: 18px;
+}
+
+canvas {
+    width: 100%;
+    max-width: 900px;
+    height: 600px;
+    background: #050505;
+    border: 1px solid #555;
+    display: block;
+    margin: auto;
+}
+
+.evento,
+.metricas {
+    margin: 20px;
+    padding: 15px;
+    background: #1c1c1c;
+    border-radius: 5px;
+}
+
+#evento {
+    padding: 12px;
+    background: #282828;
+}
+
+#estado {
+    color: #55dd55;
+}
+
+.alerta {
+    color: #ff4444;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consola Sismo-Volcánica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Consola de Vigilancia Sismo-Volcánica</h1>
+    <p>Monitoreo en tiempo real - 9 estaciones / 27 canales</p>
+</header>
+
+<section class="panel">
+
+    <div>
+        <span>Estado</span>
+        <strong id="estado">DETENIDO</strong>
+    </div>
+
+    <div>
+        <span>Estaciones activas</span>
+        <strong id="estaciones">0 / 9</strong>
+    </div>
+
+    <div>
+        <span>STA/LTA máximo</span>
+        <strong id="ratio">0.00</strong>
+    </div>
+
+    <div>
+        <span>Amplitud máxima</span>
+        <strong id="amplitud">0.00</strong>
+    </div>
+
+    <div>
+        <span>Muestras</span>
+        <strong id="muestras">0</strong>
+    </div>
+
+    <div>
+        <span>Workers</span>
+        <strong id="workers">3</strong>
+    </div>
+
+</section>
+
+<section class="controles">
+
+    <button id="btnIniciar">Iniciar monitoreo</button>
+
+    <button id="btnSismo">
+        Simular sismo
+    </button>
+
+    <button id="btnDetener">
+        Detener
+    </button>
+
+    <button id="btnCSV">
+        Exportar CSV
+    </button>
+
+</section>
+
+<section class="grafica">
+
+    <h2>27 canales en tiempo real</h2>
+
+    <canvas id="grafico" width="900" height="600"></canvas>
+
+</section>
+
+<section class="evento">
+
+    <h2>Eventos</h2>
+
+    <div id="evento">
+        No hay eventos confirmados.
+    </div>
+
+</section>
+
+<section class="metricas">
+
+    <h2>Rendimiento</h2>
+
+    <p>
+        INP:
+        <strong id="inp">0 ms</strong>
+    </p>
+
+    <p>
+        Long Tasks:
+        <strong id="longTasks">0</strong>
+    </p>
+
+    <p>
+        Contexto aislado:
+        <strong id="aislado">comprobando...</strong>
+    </p>
+
+</section>
+
+<script src="app.js"></script>
+
+</body>
+</html>
