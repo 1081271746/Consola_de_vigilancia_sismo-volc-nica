@@ -40,6 +40,11 @@ const HISTORIAL = 120000;
 
 const PIXELES = 900;
 
+
+// ========================================
+// SharedArrayBuffer
+// ========================================
+
 const memoriaDatos =
     new SharedArrayBuffer(
         NUM_CANALES *

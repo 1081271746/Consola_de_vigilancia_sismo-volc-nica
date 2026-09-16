@@ -146,7 +146,9 @@ function procesarCanal(c, valor) {
 
     const energia = valor * valor;
 
-    
+    // -----------------------------
+    // STA O(1)
+    // -----------------------------
 
     if (c.staCantidad < STA_SIZE) {
 
